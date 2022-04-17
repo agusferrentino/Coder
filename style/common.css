@@ -1,231 +1,87 @@
 * {
+  list-style: none;
+  text-decoration: none;
   margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.segundoSection img {
+  width: 20vw;
+  border-radius: 10px;
 }
 
-/*MENU*/
-.menuTitulo {
-  text-align: center;
+.segundoSection p {
+  padding: 0.2em;
 }
 
-.pedirMenu {
-  color: antiquewhite;
-  background-color: #361C0A;
-  padding: 2px;
-  margin: 4px 1px 200px 2px;
+header {
+  border: 1px solid orange;
 }
 
-.contenedorMenu {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #e08002;
+  border: 1px solid white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 11vh;
 }
 
-.menuGeneral {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  height: 400vh;
-  width: 70vw;
-      grid-template-areas: "ef ec" "tarta ensalada" "porciones menuEsp" "mila SandwHambur" "carne ave" "cerdo pescado" "parrilla cociolla" "pizza pasta" "empanada postre" "especial especial";
+header nav .opciones {
+  width: 60vw;
 }
 
-.menuGeneral ul {
-  list-style: square;
-  padding-left: 20px;
-  padding-top: 5px;
+header nav .opciones ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.menuGeneral li {
-  font-weight: 500;
-  font-size: 20px;
-  padding: 6px 0px 6px 0px;
-  color: aliceblue;
-}
-
-.opcionesMenu {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.menuGeneral h3 {
+header nav .opciones ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  color: antiquewhite;
-  background-color: #753D15;
-  border-radius: 10px;
+  width: 20vw;
+}
+
+header nav .opciones ul li a {
+  height: 50px;
+  width: 100px;
+  text-decoration: none;
+  background-color: black;
   padding: 5px;
+  color: orange;
+  border: 1px solid rgba(255, 166, 0, 0.57);
+  border-radius: 5px;
 }
 
-.entradasFrias {
-  padding: 20px;
-  background-color: #DB7227;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: ef;
+header .log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40vw;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.entradasCalientes {
-  background-color: #DB7227;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: ec;
-  padding: 20px;
+header .log img {
+  width: 5vw;
+  border: 1px solid #110901;
+  border-radius: 300px;
 }
 
-.tartas {
-  background-color: #DB7227;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: tarta;
-  padding: 20px;
-}
-
-.ensaladas {
-  background-color: #DB7227;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: ensalada;
-  padding: 20px;
-}
-
-.porciones {
-  background-color: #DB7227;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: porciones;
-  padding: 20px;
-}
-
-.menuEspecial {
-  background-color: #DB7227;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: menuEsp;
-  padding: 20px;
-}
-
-.milanesas {
-  background-color: #DB7227;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: mila;
-  padding: 20px;
-}
-
-.hamburg-Sandwich {
-  background-color: #DB7227;
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: SandwHambur;
-  padding: 20px;
-}
-
-.carnes {
-  background-color: #DB7227;
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: carne;
-  padding: 20px;
-}
-
-.aves {
-  padding: 20px;
-  background-color: #DB7227;
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: ave;
-}
-
-.cerdo {
-  background-color: #DB7227;
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: cerdo;
-  padding: 20px;
-}
-
-.pescado {
-  background-color: #DB7227;
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-  grid-area: pescado;
-  padding: 20px;
-}
-
-.parrilla {
-  background-color: #DB7227;
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: parrilla;
-  padding: 20px;
-}
-
-.cocina-olla {
-  background-color: #DB7227;
-  -ms-grid-row: 7;
-  -ms-grid-column: 2;
-  grid-area: cociolla;
-  padding: 20px;
-}
-
-.pizzas {
-  background-color: #DB7227;
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  grid-area: pizza;
-  padding: 20px;
-}
-
-.pastas {
-  background-color: #DB7227;
-  -ms-grid-row: 8;
-  -ms-grid-column: 2;
-  grid-area: pasta;
-  padding: 20px;
-}
-
-.empanadas {
-  background-color: #DB7227;
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
-  grid-area: empanada;
-  padding: 20px;
-}
-
-.postres {
-  background-color: #DB7227;
-  -ms-grid-row: 9;
-  -ms-grid-column: 2;
-  grid-area: postre;
-  padding: 20px;
-}
-
-.especialFusion {
-  background-color: #DB7227;
-  -ms-grid-row: 10;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: especial;
-  padding: 20px;
-}
-
-/*FIN MENU*/
-/*NOTICIAS*/
-.noti {
+.mainIndex {
+  height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,426 +89,120 @@ body {
       justify-content: space-around;
 }
 
-.articuloNoticia {
-  background-color: #ffde70;
-  width: 20vw;
-  height: 40vh;
-  margin: 0px 0px 5px 5px;
-  border: 3px solid black;
-  border-radius: 16px;
-  padding: 4px;
-}
-
-.articuloNoticia section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.articuloNoticia section h4 {
-  background-color: #afafaf;
-  padding: 5px;
-  border-radius: 20px;
-}
-
-.articuloNoticia section img {
-  border-radius: 2px;
-  padding: 8px;
-}
-
-/*FIN NOTICIAS*/
-/* NAVBAR */
-header {
-  height: 10vh;
-}
-
-nav {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #020024;
-  background: linear-gradient(6deg, #020024 0%, #dd7b21 0%, #ff8a00 52%, #ff9d00 81%, #ffd26d 100%);
-  border: 1px solid black;
-  width: 100vw;
-}
-
-.opciones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80vw;
-}
-
-.opciones ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 10vw;
-}
-
-nav .log {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  top: 1px;
-  height: 10vh;
-  width: 20vw;
-}
-
-nav .opciones ul li {
-  padding: 0px 20px 0px 0px;
-}
-
-nav .opciones ul li a {
-  font-size: 24px;
-  font-weight: bold;
-  color: #383734;
-}
-
-/* FIN NAVBAR */
-/* FORMULARIO CONTACTO */
-.parteAbajoCont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.parteAbajoCont h3 {
-  color: aliceblue;
-  background-color: #361C0A;
-  border-radius: 5px;
-  padding: 2px;
-}
-
-.formulario {
-  border-radius: 10px;
-  background-color: #361C0A;
-  width: 20vw;
-  height: 50vh;
-}
-
-.formulario .formulario form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-}
-
-.formulario form label {
-  color: aliceblue;
-}
-
-.formulario form input {
-  border-radius: 8px;
-  background-color: #b4b4b4;
-}
-
-.formulario form textarea {
-  border-radius: 8px;
-  background-color: #b4b4b4;
-}
-
-.formulario form #enviar {
-  margin-top: 1vh;
-  color: black;
-  background-color: #db991d;
-  border: 2px solid black;
-  border-radius: 8px;
-  width: 10vw;
-}
-
-.formulario form #enviar:hover {
-  background-color: #DB7227;
-}
-
-.maps {
-  width: 100%;
-  height: 400px;
-}
-
-#formCont {
-  text-align: center;
-}
-
-.pedya {
-  color: white;
-  background-color: #b41414;
-  border: 2px solid white;
-  border-radius: 5px;
-}
-
-.whatsapp {
-  color: white;
-  background-color: #11c23d;
-  border: 2px solid white;
-  border-radius: 5px;
-}
-
-/* FIN FORMULARIO CONTACTO */
-/*INDEX*/
-.mainIndex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .mainIndex section {
-  margin: 4px;
-  background-color: #afada7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: rgba(52, 44, 30, 0.792);
   width: 40vw;
-  height: 40vh;
-  border-radius: 10px;
-  padding: 10px;
+  height: 60vh;
+  color: white;
 }
 
-.bajoIndex {
-  text-align: center;
+.mainIndex section .galeria {
+  height: 20vh;
 }
 
-/*FIN INDEX*/
-/*SobreNOS*/
-.backNos {
-  height: 82vh;
+.pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 11vh;
 }
 
-/*FIN SobreNOS*/
-/* GENERAL STUFF */
-.whatsappBoton {
-  position: fixed;
-  right: 1px;
-  bottom: 1px;
+.pie .tituloPie {
+  color: white;
 }
 
-.whatsappBoton a img {
-  height: 120px;
-  width: 140px;
+.pie .h4Pie {
+  color: white;
+}
+
+.pie .autor {
+  color: white;
+}
+
+.tamanio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  width: 40vw;
+}
+
+.tamanio .bordes {
+  border-radius: 0px;
+  border: 1px solid black;
+}
+
+.tamanio img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20vw;
 }
 
 .titulo {
-  color: beige;
-  background-color: #B55E21;
+  color: white;
+  background-color: rgba(245, 245, 220, 0.285);
   text-align: center;
-  font-size: 24px;
-  margin: 0px 0px 5px 0px;
 }
 
-ul {
-  list-style: none;
+.fondo {
+  background: url("../images/platos/bg2Total.jpeg");
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-/*linear-gradient(6deg, rgba(2,0,36,1) 0%, rgba(221,123,33,1) 0%, rgba(255,210,109,1) 100%);*/
-body {
-  background: #020024;
-  background: #74552d;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+.whatsappBoton {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
 }
 
-a {
-  text-decoration: none;
-  color: #070c08;
-}
-
-.botonera {
-  margin: 15px 0px 10px 5px;
-}
-
-footer {
-  background-color: #B55E21;
-  height: 8vh;
+.whatsappBoton a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  color: white;
+  font-size: large;
 }
 
-footer p {
-  font-weight: bold;
+.whatsappBoton a img {
+  width: 8vw;
+  height: 13vh;
 }
 
-.imagen {
-  width: 100px;
-  height: 100px;
-}
-
-/*IMPLEMENTACION MOBILE*/
-@media screen and (max-width: 844px) {
-  /*SobreNOS*/
-  .backNos {
-    height: 84vh;
+@media screen and (max-height: 768px) {
+  .mainIndex {
+    height: 59vh;
   }
-  /*FIN SobreNOS*/
-  /*NAV RESPONSIVE*/
-  header {
-    height: 25vh;
-  }
-  .opciones {
-    width: 50vw;
-  }
-  .opciones ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .opciones ul li {
-    padding: 6px;
-    margin-bottom: 8px;
-  }
-  .opciones ul li a {
-    color: #fbfbfb;
-    background-color: white;
-    border-radius: 6px;
-    border: 2px solid black;
-  }
-  nav .log {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50vw;
-    height: 25vh;
-  }
-  nav .log img {
-    width: 30vw;
-    height: 15vh;
-  }
-  /*FIN NAV RESPONSIVE*/
-  /*CONTACTO RESPONSIVE*/
-  .dataCont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .dataCont .direccionFusion {
-    color: aliceblue;
-  }
-  .formulario {
-    width: 60vw;
-    height: 34vh;
-  }
-  .formulario form #enviar {
-    width: 25vw;
-  }
-  /*FIN CONTACTO RESPONSIVE*/
-  /*GENERAL STUFF*/
-  .whatsappBoton {
-    position: fixed;
-    right: 1px;
-    bottom: 60px;
-  }
-  .whatsappBoton a img {
-    height: 90px;
-    width: 100px;
-  }
-  /*FIN GENERAL STUFF*/
-  /*NOTICIAS*/
-  .noti {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .articuloNoticia {
-    width: 90vw;
-    padding: 20px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .articuloNoticia section img {
-    border-radius: 20px;
-    height: 15vh;
-    width: 50vw;
-  }
-  /*FIN NOTICIAS*/
-  /*MENU*/
-  .fondoMenu {
-    height: 880vh;
-  }
-  .menuGeneral {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[18];
-        grid-template-rows: repeat(18, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;
-    height: 400vh;
-    width: 95vw;
-        grid-template-areas: "ef" "ec" "tarta" "ensalada" "porciones" "menuEsp" "mila" "SandwHambur" "carne" "ave" "cerdo" "pescado" "parrilla" "cociolla" "pizza" "pasta" "empanada" "postre" "especial";
+  .pie {
+    height: 18vh;
   }
 }
-
-/* offset-x | offset-y | blur-radius | spread-radius | color */
 /*# sourceMappingURL=common.css.map */
