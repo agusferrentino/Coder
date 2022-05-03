@@ -4,6 +4,192 @@
   margin: 0;
 }
 
+.dataCont {
+  margin-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dataCont .botonera .whatsapp {
+  text-decoration: none;
+  color: white;
+  background-color: #2d9e00;
+  border: 1px double black;
+}
+
+.dataCont .botonera .pedya {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(182, 4, 4, 0.877);
+  border: 1px double black;
+}
+
+.parteAbajoCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.parteAbajoCont .maps {
+  width: 40vw;
+}
+
+.parteAbajoCont .formulario {
+  border: 1px solid black;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.418);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parteAbajoCont .formulario #formCont {
+  color: beige;
+}
+
+.parteAbajoCont .formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parteAbajoCont .formulario form label {
+  color: white;
+}
+
+.parteAbajoCont .formulario form textarea {
+  border-radius: 5px;
+}
+
+.parteAbajoCont .formulario form input {
+  background-color: beige;
+  border-radius: 5px;
+}
+
+.contenedorMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.contenedorMenu .menuGeneral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contenedorMenu .menuGeneral .caja {
+  margin: 10px;
+  background-color: rgba(245, 245, 220, 0.507);
+  border: 3px double rgba(0, 0, 0, 0.555);
+}
+
+.contenedorMenu .menuGeneral .caja h3 {
+  text-align: center;
+}
+
+.contenedorMenu .menuGeneral .caja ul {
+  padding: 4px;
+}
+
+.noti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 60vh;
+}
+
+.noti .articuloNoticia {
+  width: 20vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: beige;
+  border-radius: 5px;
+}
+
+.noti .articuloNoticia .sect1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.noti .articuloNoticia .sect1 .imagen {
+  width: 100px;
+  height: 100px;
+}
+
+.noti .articuloNoticia .sect1 p {
+  padding: 4px;
+}
+
+.backNos {
+  height: 90vh;
+}
+
+.backNos .cuerpoSobreNos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.backNos .cuerpoSobreNos p {
+  text-align: center;
+  width: 36vw;
+}
+
+.backNos .cuerpoSobreNos img {
+  border: 1px solid black;
+  width: 70vh;
+  height: 40vh;
+}
+
 .segundoSection img {
   width: 20vw;
   border-radius: 10px;
@@ -85,11 +271,16 @@ header .log img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 98vw;
 }
 
-.mainIndex section {
+.mainIndex .dudaPedir {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +291,7 @@ header .log img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 20px;
+  border-radius: 0px;
   border: 1px solid white;
   background-color: rgba(52, 44, 30, 0.792);
   width: 40vw;
@@ -108,8 +299,43 @@ header .log img {
   color: white;
 }
 
-.mainIndex section .galeria {
+.mainIndex .dudaPedir .galeria {
   height: 20vh;
+}
+
+.mainIndex .sugerencias {
+  width: 25vw;
+  position: absolute;
+  left: 18vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../images/inicio1.png");
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30vh;
+}
+
+.mainIndex .sugerencias img {
+  width: 30vw;
+  height: 40vh;
+  border: 3px solid black;
+}
+
+.mainIndex .sugerencias a {
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.521);
+  background-size: cover;
+  color: white;
+}
+
+.mainIndex .sugerencias :hover {
+  background: black;
 }
 
 .pie {
@@ -127,15 +353,15 @@ header .log img {
 }
 
 .pie .tituloPie {
-  color: white;
+  color: black;
 }
 
 .pie .h4Pie {
-  color: white;
+  color: black;
 }
 
 .pie .autor {
-  color: white;
+  color: black;
 }
 
 .tamanio {
@@ -165,14 +391,13 @@ header .log img {
 
 .titulo {
   color: white;
-  background-color: rgba(245, 245, 220, 0.285);
+  background-color: rgba(26, 26, 24, 0.486);
   text-align: center;
 }
 
 .fondo {
-  background: url("../images/platos/bg2Total.jpeg");
-  -o-object-fit: contain;
-     object-fit: contain;
+  background: url("../images/platos/bgGeneral.jpg");
+  background-size: cover;
 }
 
 .whatsappBoton {
@@ -188,7 +413,7 @@ header .log img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: black;
   font-size: large;
 }
 
@@ -197,12 +422,46 @@ header .log img {
   height: 13vh;
 }
 
-@media screen and (max-height: 768px) {
-  .mainIndex {
-    height: 59vh;
+@media screen and (max-width: 400px) {
+  header {
+    height: 14vh;
   }
-  .pie {
-    height: 18vh;
+  header nav {
+    height: 14vh;
+  }
+  header nav .opciones {
+    width: 100vw;
+  }
+  header nav .opciones ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header nav .opciones ul li {
+    padding-right: 5px;
+  }
+  header nav .log img {
+    height: 10vh;
+    width: 20vw;
+  }
+  .mainIndex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainIndex .dudaPedir {
+    width: 100vw;
+    height: 30vh;
+  }
+  .mainIndex .dudaPedir .tamanio {
+    width: 60vw;
+    height: 20vh;
+  }
+  .mainIndex .sugerencias {
+    position: unset;
+    width: 70vw;
+    height: 20vh;
   }
 }
 /*# sourceMappingURL=common.css.map */

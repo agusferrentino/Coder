@@ -1,12 +1,146 @@
-//Index
+
 *{
     list-style: none;
     text-decoration: none;
     margin: 0;
 }
+//menu
+
+.dataCont{
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .botonera{
+        .whatsapp{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(45, 158, 0);
+            border: 1px double black;
+        }
+        .pedya{
+            text-decoration: none;
+            color: white;
+            background-color: rgba(182, 4, 4, 0.877);
+            border: 1px double black;
+ 
+
+        }
+    }
+}
+.parteAbajoCont{
+    display: flex;
+    justify-content: space-around;
+    .maps{
+        width: 40vw;
+        
+    }
+    
+    
+    .formulario{
+        border: 1px solid black;
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0.418);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #formCont{
+            color: beige;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            label{
+                color: white;
+            }
+            textarea{
+                border-radius: 5px;
+            }
+            input{
+                background-color: beige;
+                border-radius: 5px;
+            }
+        }
+
+    
+    }
+}
+//Menu
+.contenedorMenu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    .menuGeneral{
+        display: flex;
+        width: 70vw;
+        flex-wrap: wrap;
+        .caja{
+            margin: 10px;
+            background-color: rgba(245, 245, 220, 0.507);
+            border: 3px double rgba(0, 0, 0, 0.555);
+            h3{
+                text-align: center;
+
+            }
+            ul{
+                padding: 4px;
+                
+            }
+        }
+    }
+    
+}
+
+//Noti
+.noti{
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+    .articuloNoticia{
+        width: 20vw;
+        flex-wrap: wrap;
+        background-color: beige;
+        border-radius: 5px;
+        .sect1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .imagen{
+                width: 100px;
+                height: 100px;
+            }
+            p{
+                padding: 4px;
+            }
+        }
+    }
+}
+//SobreNos
+.backNos{
+    height: 90vh;
+    .cuerpoSobreNos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            text-align: center;
+            width: 36vw;
+        }
+        img{
+            
+            border: 1px solid black;
+            width: 70vh;
+            height: 40vh;
+            
+        }
+    }
+}
+//Index
 .segundoSection{
     img{
         width: 20vw;
+        
         border-radius: 10px;
     }
     p{
@@ -52,6 +186,7 @@ header{
     .log{
         display: flex;
         width: 40vw;
+        
         justify-content: flex-end;
         img{
             width: 5vw;
@@ -65,12 +200,15 @@ header{
 .mainIndex{
     height: 65vh;
     display: flex;
-    justify-content: space-around;
-    section{
+    justify-content: flex-end;
+    align-items: center;
+    width: 98vw;
+    .dudaPedir{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 20px;
+        
+        border-radius: 0px;
         border: 1px solid white;
         background-color: rgba(52, 44, 30, 0.792);
         width: 40vw;
@@ -83,24 +221,59 @@ header{
             height: 20vh;
         }
     }
+    .sugerencias{
+        width: 25vw;
+        position: absolute;
+        left: 18vw;
+        display: flex;
+        background-image: url("../images/inicio1.png");
+        background-size: cover;
+        
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        img{
+            width: 30vw;
+            height: 40vh;
+            border: 3px solid black;
+            :hover{
+                
+            }
+        }
+        a{
+            font-size: 40px;
+            background-color: rgba(0, 0, 0, 0.521);
+            background-size: cover;
+            color: white;
+        }
+        
+        :hover{
+            background: black;
+        }
+        
+    }
+    
 }
 //Fin index
+//Menu
+
 //pie
 .pie{
+    //background-color: rgba(245, 245, 220, 0.445);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 11vh;
     .tituloPie{
-        color: white;
+        color: rgb(0, 0, 0);
 
     }
     .h4Pie{
-        color: white;
+        color: rgb(0, 0, 0);
 
     }
     .autor{
-        color: white;
+        color: rgb(0, 0, 0);
     }
 }
 //fin pie
@@ -127,18 +300,13 @@ header{
 //GeneralStuff
 .titulo{
     color: white;
-    background-color: rgba(245, 245, 220, 0.285);
+    background-color: rgba(26, 26, 24, 0.486);
     text-align: center;
     
 }
 .fondo{
-    background: url("../images/platos/bg2Total.jpeg");
-    object-fit: contain;
-    
-    
-    
-    
-    
+    background: url("../images/platos/bgGeneral.jpg");
+    background-size: cover;
 }
 .whatsappBoton{
     
@@ -149,7 +317,7 @@ header{
     a{
         display: flex;
         align-items: center;
-        color: white;
+        color: rgb(0, 0, 0);
         font-size: large;
         img{
             width: 8vw;
@@ -158,17 +326,49 @@ header{
     }
 }
 //Fin GeneralStuff
-@media screen and (max-height: 768px) {
-    .mainIndex{
-        height: 59vh;
-    }
-    .pie{
-        
-        height: 18vh;
 
-        .tituloPie{
-            
+@media screen and (max-width: 400px){
+    header{
+        height: 14vh;
+        nav{
+            height: 14vh;
+            .opciones{
+                width: 100vw;
+                ul{
+                    flex-wrap: wrap;
+                    li{
+                        padding-right: 5px;
+                    }
+                }
+            }
+            .log{
+                img{
+                    height: 10vh;
+                    width: 20vw;
+                }
+            }
         }
-        
+    }
+    .mainIndex{
+        justify-content: center;
+
+        flex-wrap: wrap;
+        .dudaPedir{
+            width: 100vw;
+            height: 30vh;
+            .tamanio{
+                width: 60vw;
+                height: 20vh;
+            }
+        }
+        .sugerencias{
+            position: unset;
+            width: 70vw;
+            height: 20vh;
+            a{
+                
+                
+            }
+        }
     }
 }
