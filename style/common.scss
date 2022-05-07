@@ -119,6 +119,7 @@
 //SobreNos
 .backNos{
     height: 90vh;
+    width: 100vw;
     .cuerpoSobreNos{
         display: flex;
         flex-direction: column;
@@ -202,7 +203,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 98vw;
+    width: 100vw;
     .dudaPedir{
         display: flex;
         flex-direction: column;
@@ -325,9 +326,7 @@ header{
         }
     }
 }
-//Fin GeneralStuff
-
-@media screen and (max-width: 400px){
+@media screen and (max-width: 1200px) {
     header{
         height: 14vh;
         nav{
@@ -337,7 +336,249 @@ header{
                 ul{
                     flex-wrap: wrap;
                     li{
-                        padding-right: 5px;
+                        
+                    }
+                }
+            }
+            .log{
+                img{
+                    border-radius: 0px;
+                    border: 0;
+                    height: 10vh;
+                    width: 15vw;
+                }
+            }
+        }
+    }
+}
+//Fin GeneralStuff
+@media screen and (max-width: 940px) {
+    header{
+        height: 14vh;
+        width: 100vw;
+        nav{
+            height: 14vh;
+            .opciones{
+                width: 100vw;
+                ul{
+                    flex-wrap: wrap;
+                    li{
+                        
+                    }
+                }
+            }
+            .log{
+                position: relative;
+                top: 1vh;
+                right: 5vw;
+                img{
+                    border-radius: 0px;
+                    border: 0;
+                    height: 10vh;
+                    width: 15vw;
+                }
+            }
+        }
+    }
+    .whatsappBoton{
+        
+        position: fixed;
+        bottom: 1vh;
+        right: 5vw;
+        a{
+            
+            img{
+                width: 20vw;
+                height: 13vh;
+            }
+        }
+    }
+    .mainIndex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vw;
+        flex-wrap: wrap;
+        .dudaPedir{
+            width: 60vw;
+            height: 30vh;
+            .tamanio{
+                width: 100vw;
+                height: 20vh;
+            }
+        }
+        .sugerencias{
+            position: unset;
+            width: 40vw;
+            height: 20vh;
+            a{
+                
+                
+            }
+        }
+    }
+    //pie
+    .pie{
+        //background-color: rgba(245, 245, 220, 0.445);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        background-color: rgba(240, 248, 255, 0.276);
+        height: 20vh;
+        .tituloPie{
+            color: rgb(0, 0, 0);
+    
+        }
+        .h4Pie{
+            color: rgb(0, 0, 0);
+    
+        }
+        .autor{
+            color: rgb(0, 0, 0);
+        }
+    }
+    //noti
+    .noti{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 90vh;
+        
+        .articuloNoticia{
+            width: 44vw;
+            margin-top: 2vh;
+            background-color: beige;
+            border-radius: 5px;
+            border: 1px solid black;
+            .sect1{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h4{
+                    text-align: center;
+                }
+                .imagen{
+                    width: 40vw;
+                    height: 18vh;
+                }
+                p{
+                    padding: 4px;
+                }
+            }
+        }
+    }
+    //SobreNos
+    .backNos{
+        height:70vh;
+        .cuerpoSobreNos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                text-align: center;
+                width: 60vw;
+            }
+            img{
+                
+                border: 1px solid black;
+                width: 60vw;
+                height: 32vh;
+                
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .parteAbajoCont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .maps{
+            width: 80vw;
+            height: 40vh;
+        }
+        
+        .formulario{
+            border: 1px solid black;
+            padding: 2px;
+            background-color: rgba(0, 0, 0, 0.418);
+            display: flex;
+            margin-bottom: 3px;
+            flex-direction: column;
+            align-items: center;
+            #formCont{
+                color: beige;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                label{
+                    color: white;
+                }
+                textarea{
+                    border-radius: 5px;
+                }
+                input{
+                    background-color: beige;
+                    border-radius: 5px;
+                }
+            }
+    
+        
+        }
+    }
+    .noti{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 100vh;
+        
+        .articuloNoticia{
+            width: 44vw;
+            margin-top: 2vh;
+            background-color: beige;
+            border-radius: 5px;
+            border: 1px solid black;
+            .sect1{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h4{
+                    text-align: center;
+                }
+                .imagen{
+                    width: 40vw;
+                    height: 20vh;
+                }
+                p{
+                    padding: 4px;
+                }
+            }
+        }
+    }
+    .pie{
+        display: none;
+    }
+    header{
+        height: 21vh;
+        nav{
+            height: 21vh;
+            .opciones{
+                width: 100vw;
+                ul{
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    padding-right: 5px;
+                    li{
+                        justify-content: center;
+                        
+                        margin: 0px 2px;
                     }
                 }
             }
